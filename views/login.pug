@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Webim test task
+        style
+            include /css/kube.min.css
+    body
+        div(style="margin-top: 5%")
+            div(class='col')
+                - if (!user) {
+                    h2  It's time!
+                    a(class='button' href="/auth/vk") login with vk
+                -} else {
+                    h2 You are already logged in
+                    a(class='button' href="/logout") logout
+                -}

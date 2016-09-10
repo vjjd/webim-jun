@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Webim test task
+        style
+            include /css/kube.min.css
+    body
+        div(style="margin-top: 5%")
+            div(class='col')
+                - if (!user) {
+                    h2 Hello, Webim!
+                    a(class='button' href='/login') Please login
+                - } else {
+                    - var main_page = "Welcome home, " + user.username
+                        h2= main_page
+                        a(class='button' href='/account') Your profile
+                        a(class='button' href='/logout') Logout
+                - }
