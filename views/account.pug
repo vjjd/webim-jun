@@ -7,7 +7,7 @@ html
     body
         div(style="margin-top: 5%")
             div(class='col')
-                - var greetings = 'Hello, ' + user.username
+                - var greetings = 'Hello, ' + user.displayName
                     h2= greetings
                     p It's yours some random friends:
                 - var friend_list = friends.response.items
