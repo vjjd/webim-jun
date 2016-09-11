@@ -8,7 +8,7 @@ let vk = new VKontakteStrategy(
     {
         clientID:    config.passportOptions.clientID,
         clientSecret: config.passportOptions.clientSecret,
-        callbackURL:  `https://${process.env.HOST || config.host}:`+
+        callbackURL:  `${process.env.HOST || config.host}:`+
         `${process.env.PORT || config.port}/auth/vk/callback`
     },
     function myVerifyCallbackFn(accessToken, refreshToken, profile, done) {
