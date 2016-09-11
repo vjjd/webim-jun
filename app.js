@@ -32,6 +32,6 @@ app
 // Routing
 require('./library/routes')(app, passport);
 
-app.listen(config.port, () => {
+app.listen(process.env.PORT || config.port, () => {
     console.log(`Server listening on ${config.host}:${config.port}`)
 });
