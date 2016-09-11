@@ -9,7 +9,7 @@ html
             div(class='col')
                 - var greetings = 'Hello, ' + user.displayName
                     h2= greetings
-                    p It's yours some random friends:
+                    p Your some random friends:
                 - var friend_list = friends.response.items
                 - for (var i = 0; i < friend_list.length; i++)
                     li= friend_list[i].first_name + ' ' + friend_list[i].last_name
