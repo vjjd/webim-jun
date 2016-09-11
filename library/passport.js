@@ -6,9 +6,9 @@ const VKontakteStrategy = require('passport-vkontakte').Strategy;
 let config = require('../config');
 let vk = new VKontakteStrategy(
     {
-        clientID:    config.passportOptions.clientID,
-        clientSecret: config.passportOptions.clientSecret,
-        callbackURL:  `https://webim-jun.herokuapp.com/auth/vk/callback`
+        clientID:    config.clientID,
+        clientSecret: config.clientSecret,
+        callbackURL:  config.webCallbackURI || config.localCallbackURI
     },
     function myVerifyCallbackFn(accessToken, refreshToken, profile, done) {
         process.nextTick(() => done(null, profile));
