@@ -4,7 +4,7 @@
   "description": "Task: create web application, that allows user to authorize through vk oauth, than displays his 5 random friends",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Daniil Markov",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
+    "nodemon": "^1.10.2",
     "passport": "^0.3.2",
     "passport-vkontakte": "^0.3.2",
     "pug": "^2.0.0-beta6",
