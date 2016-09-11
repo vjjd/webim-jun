@@ -1,7 +1,7 @@
 'use strict';
 
 let config = {
-    host: 'http://localhost',
+    host: 'localhost',
     port: 3000,
 
     passportOptions: {

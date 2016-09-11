@@ -1,7 +1,6 @@
 'use strict';
 
 let request = require('request');
-let config  = require('../config');
 
 module.exports = (app, passport) => {
     app.get('/', (req, res) => {
