@@ -8,7 +8,7 @@ let vk = new VKontakteStrategy(
     {
         clientID:    config.passportOptions.clientID,
         clientSecret: config.passportOptions.clientSecret,
-        callbackURL:  `https://webim-jun.herokuapp.com:80/auth/vk/callback`
+        callbackURL:  `https://webim-jun.herokuapp.com/auth/vk/callback`
     },
     function myVerifyCallbackFn(accessToken, refreshToken, profile, done) {
         process.nextTick(() => done(null, profile));
