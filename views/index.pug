@@ -11,7 +11,7 @@ html
                     h2 Hello, Webim!
                     a(class='button' href='/login') Please login
                 - } else {
-                    - var main_page = "Welcome home, " + user.username
+                    - var main_page = "Welcome home, " + user.displayName
                         h2= main_page
                         a(class='button' href='/account') Your profile
                         a(class='button' href='/logout') Logout
